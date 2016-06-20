@@ -1,0 +1,19 @@
+site_name: The Idiot's Guide to Railroad Physics
+theme: 'material'
+pages:
+- Introduction: index.md
+
+# Extensions
+markdown_extensions:
+  - codehilite(css_class=code)
+  - admonition
+  - toc:
+      permalink: '#'
+
+extra:
+  i18n:
+    prev: 'Previous'
+    next: 'Next'
+  author:
+    github: 'k4kfh'
+
