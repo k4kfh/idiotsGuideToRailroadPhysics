@@ -5,7 +5,7 @@ This page serves half of this entire guide's purpose. As I said in the author's 
 ---
 ## Formulas
 
-- **Tractive Effort:** T = 2650 * (nP/V)
+- **Tractive Effort:** T = 2650 * (nP/V) [Source](http://128.173.204.63/courses/cee3604/cee3604_pub/rail_resistance.pdf)
 	- Where T is Tractive Effort in Newtons 
 	- n is an efficiency coefficient (for the F7-A it is ~.85)
 	- P is the output horsepower
