@@ -2,6 +2,13 @@
 
 This guide was originally conceived by [@k4kfh](http://github.com/k4kfh).
 
+## Navigating The Guide
+
+The guide is organized to be readable from beginning to end, useful for those with little or no railroad knowledge. However, feel free to jump in at any point, or pick out the information you need using the search bar above!
+
+!!! note "Tip"
+	If you're just searching for "numbers," such as reservoir dimensions or a mystery friction coefficient, you can find most of these values at the end of the guide, on the "Valuable Values" page.
+
 ## Author's Note
 
 I begin writing this in June 2016, after working on [ZephyrCab](http://github.com/k4kfh/ZephyrCab) for over a year. When I started ZephyrCab, I was not only new to JavaScript development, I was new to railroad physics. In a way, I was new to railroads. I knew some history, and I knew a bit of what made them tick, but I did not have any knowledge of how to drive a train, or the science at work on the railroad. In writing ZephyrCab, I spent days at a time reading about physics. I started with the classic ``f=ma`` and worked my way up from there. During this research and learning, I found myself battling a recurring problem: *there simply isn't enough good literature on these problems.* There are a few articles here and there, but the complete mathematical backend of a train simulator was, for the most part, closed-source and kept secret.

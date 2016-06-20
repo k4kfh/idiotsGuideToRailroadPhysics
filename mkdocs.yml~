@@ -8,12 +8,8 @@ pages:
 markdown_extensions:
   - codehilite(css_class=code)
   - admonition
-  - mdx_math
   - toc:
       permalink: '#'
-
-extra_javascript: 
-    - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 extra:
   i18n:

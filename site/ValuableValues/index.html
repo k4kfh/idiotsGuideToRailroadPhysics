@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>The Idiot's Guide to Railroad Physics</title>
+        <title>Valuable Values - The Idiot's Guide to Railroad Physics</title>
       
       
       
@@ -17,31 +17,31 @@
     
     <meta property="og:url" content="None">
     <meta property="og:title" content="The Idiot's Guide to Railroad Physics">
-    <meta property="og:image" content="None/./">
+    <meta property="og:image" content="None/../">
     <meta name="apple-mobile-web-app-title" content="The Idiot's Guide to Railroad Physics">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
     
-    <link rel="shortcut icon" type="image/x-icon" href="./None">
-    <link rel="icon" type="image/x-icon" href="./None">
+    <link rel="shortcut icon" type="image/x-icon" href="../None">
+    <link rel="icon" type="image/x-icon" href="../None">
     <style>
       @font-face {
       	font-family: 'Icon';
-      	src: url('./assets/fonts/icon.eot?52m981');
-      	src: url('./assets/fonts/icon.eot?#iefix52m981')
+      	src: url('../assets/fonts/icon.eot?52m981');
+      	src: url('../assets/fonts/icon.eot?#iefix52m981')
                format('embedded-opentype'),
-      		   url('./assets/fonts/icon.woff?52m981')
+      		   url('../assets/fonts/icon.woff?52m981')
                format('woff'),
-      		   url('./assets/fonts/icon.ttf?52m981')
+      		   url('../assets/fonts/icon.ttf?52m981')
                format('truetype'),
-      		   url('./assets/fonts/icon.svg?52m981#icon')
+      		   url('../assets/fonts/icon.svg?52m981#icon')
                format('svg');
       	font-weight: normal;
       	font-style: normal;
       }
     </style>
-    <link rel="stylesheet" href="./assets/stylesheets/application-0dac3e5884.css">
+    <link rel="stylesheet" href="../assets/stylesheets/application-0dac3e5884.css">
     
     
       
@@ -58,7 +58,7 @@
       </style>
     
     
-    <script src="./assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
     
   </head>
   
@@ -87,7 +87,7 @@
             
           </span>
         
-        The Idiot's Guide to Railroad Physics
+        Valuable Values
       </div>
     </div>
     
@@ -143,39 +143,43 @@
           
             
   <li>
-    <a class="current" title="Introduction" href=".">
+    <a class="" title="Introduction" href="..">
       Introduction
     </a>
-    
-      
-        
-      
-      
-        <ul>
-          
-            <li class="anchor">
-              <a title="Navigating The Guide" href="#navigating-the-guide">
-                Navigating The Guide
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Author's Note" href="#authors-note">
-                Author's Note
-              </a>
-            </li>
-          
-        </ul>
-      
     
   </li>
 
           
             
   <li>
-    <a class="" title="Valuable Values" href="ValuableValues/">
+    <a class="current" title="Valuable Values" href="./">
       Valuable Values
     </a>
+    
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Introduction" href="#introduction">
+                Introduction
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Formulas" href="#formulas">
+                Formulas
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Numbers" href="#numbers">
+                Numbers
+              </a>
+            </li>
+          
+        </ul>
+      
     
   </li>
 
@@ -204,20 +208,34 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h1>
-<p>This guide was originally conceived by <a href="http://github.com/k4kfh">@k4kfh</a>.</p>
-<h2 id="navigating-the-guide">Navigating The Guide<a class="headerlink" href="#navigating-the-guide" title="Permanent link">#</a></h2>
-<p>The guide is organized to be readable from beginning to end, useful for those with little or no railroad knowledge. However, feel free to jump in at any point, or pick out the information you need using the search bar above!</p>
-<div class="admonition note">
-<p class="admonition-title">Tip</p>
-<p>If you're just searching for "numbers," such as reservoir dimensions or a mystery friction coefficient, you can find most of these values at the end of the guide, on the "Valuable Values" page.</p>
-</div>
-<h2 id="authors-note">Author's Note<a class="headerlink" href="#authors-note" title="Permanent link">#</a></h2>
-<p>I begin writing this in June 2016, after working on <a href="http://github.com/k4kfh/ZephyrCab">ZephyrCab</a> for over a year. When I started ZephyrCab, I was not only new to JavaScript development, I was new to railroad physics. In a way, I was new to railroads. I knew some history, and I knew a bit of what made them tick, but I did not have any knowledge of how to drive a train, or the science at work on the railroad. In writing ZephyrCab, I spent days at a time reading about physics. I started with the classic <code>f=ma</code> and worked my way up from there. During this research and learning, I found myself battling a recurring problem: <em>there simply isn't enough good literature on these problems.</em> There are a few articles here and there, but the complete mathematical backend of a train simulator was, for the most part, closed-source and kept secret.</p>
-<p>After spending over a year slowly piecing together the information I needed, with help from two men who generously gave time and expertise to teach me, I have inched forward in the development of ZephyrCab. I've learned a lot in this time, and as beneficial to me as the search for information has been, I don't want every person who's curious about the inner workings of trains to find themselves in my position. My goal in writing <em>The Idiot's Guide to Railroad Physics</em> is to make this specialized, hard-to-find information available to all.</p>
-<p>With that in mind, I have included two types of content in this guide: concepts and numbers. What do I mean "numbers," you ask? For every hour I spent searching for a formula or other form of conceptual knowledge on railroading, I spent at least 30 minutes searching for the actual numbers to use with these formulas. Wheel diameters, pipe lengths, friction coefficients, reservoir volumes, air compressor flow rates; the list goes on. Some of this information can be found in locomotive data sheets, but some of it required much more digging than that. Therefore, in addition to information on how these things work, I felt it necessary to include the "actual numbers" to make these concepts function in practice.</p>
-<p>I hope you enjoy this guide! If you'd like to contribute, please visit the GitHub project, <a href="http://github.com/k4kfh/idiotsGuideToRailroadPhysics">k4kfh/idiotsGuideToRailroadPhysics</a>.</p>
-<p>Happy railroading!</p>
+            <h1>Valuable Values</h1>
+          
+          <h3 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h3>
+<p>This page serves half of this entire guide's purpose. As I said in the author's note at the beginning, one of my goals with this guide is to make hard-to-find numbers/formulas easy to find. I've spent countless hours searching for obscure formulas, reservoir dimensions, pipe diameters, operating pressures, and other important numbers that nobody seems to have. Consequently, I've gathered all of these values in one central location to save everyone else the trouble.</p>
+<hr />
+<h2 id="formulas">Formulas<a class="headerlink" href="#formulas" title="Permanent link">#</a></h2>
+<ul>
+<li>Tractive Effort: T = 2650 * (nP/V)<ul>
+<li>Where T is Tractive Effort in Newtons </li>
+<li>n is an efficiency coefficient (for the F7 it is ~.85)</li>
+<li>P is the output horsepower</li>
+<li>V is the velocity in km/hr </li>
+</ul>
+</li>
+</ul>
+<h2 id="numbers">Numbers<a class="headerlink" href="#numbers" title="Permanent link">#</a></h2>
+<ul>
+<li>EMD F7 - Main Reservoir Volume</li>
+<li>Main Air Reservoir, Compressor Cutoff Switch Pressures (Typical)<ul>
+<li>Upper Limit: 140psi</li>
+<li>Lower Limit: 130psi</li>
+</ul>
+</li>
+<li>Train Brake Pipe Pressure (Typical)<ul>
+<li>90psi to 120psi</li>
+</ul>
+</li>
+</ul>
           <aside class="copyright" role="note">
             
             Documentation built with
@@ -234,24 +252,24 @@
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-    </div>
-    <div class="next">
-      
-        <a href="ValuableValues/" title="Valuable Values">
+        <a href=".." title="Introduction">
           <span class="direction">
-            Next
+            Previous
           </span>
           <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
             <div class="stretch">
               <div class="title">
-                Valuable Values
+                Introduction
               </div>
-            </div>
-            <div class="button button-next" role="button" aria-label="Next">
-              <i class="icon icon-forward"></i>
             </div>
           </div>
         </a>
+      
+    </div>
+    <div class="next">
       
     </div>
   </nav>
@@ -270,10 +288,10 @@
       </div>
     </main>
     <script>
-      var base_url = '.';
+      var base_url = '..';
       var repo_id  = '';
     </script>
-    <script src="./assets/javascripts/application-997097ee0c.js"></script>
+    <script src="../assets/javascripts/application-997097ee0c.js"></script>
     
       <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
