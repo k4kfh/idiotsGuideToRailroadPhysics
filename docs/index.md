@@ -11,6 +11,8 @@ This guide was originally conceived by [@k4kfh](http://github.com/k4kfh). Howeve
 	- [His library of useful facts, charts, and locomotive specifications](http://alkrugsite.evilgeniustech.com/rrfacts/rrfacts.htm)
 	- His generous email help
 
+---
+
 ## Navigating The Guide
 
 The guide is organized to be readable from beginning to end, useful for those with little or no railroad knowledge. However, feel free to jump in at any point, or pick out the information you need using the search bar above!
