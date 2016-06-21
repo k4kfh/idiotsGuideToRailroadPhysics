@@ -2,6 +2,8 @@ site_name: The Idiot's Guide to Railroad Physics
 theme: 'material'
 pages:
 - Introduction: index.md
+- The Basics: TheBasics.md
+- Horsepower and Tractive Effort: HorsepowerAndTractiveEffort.md
 - Valuable Values: ValuableValues.md
 
 # Extensions
