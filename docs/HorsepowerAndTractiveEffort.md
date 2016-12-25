@@ -136,4 +136,4 @@ So T equals approximately 7,496lbs.
 | 60mph        | 6,681lbs        |
 
 ---
-That's all for this chapter. In the next chapter, we'll discuss how to find acceleration/speed using your tractive effort calculations, and a few restrictions on speed due to the design of the locomotive.
+That's all for this chapter. In the next chapter, we'll discuss a few quirks to the tractive effort formula, and some other forces that act on a train.
