@@ -3,32 +3,40 @@
 
     
     <url>
-     <loc>None/</loc>
-     <lastmod>2016-06-21</lastmod>
+     <loc>/</loc>
+     <lastmod>2016-12-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/TheBasics/</loc>
-     <lastmod>2016-06-21</lastmod>
+     <loc>/TheBasics/</loc>
+     <lastmod>2016-12-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/HorsepowerAndTractiveEffort/</loc>
-     <lastmod>2016-06-21</lastmod>
+     <loc>/HorsepowerAndTractiveEffort/</loc>
+     <lastmod>2016-12-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/ValuableValues/</loc>
-     <lastmod>2016-06-21</lastmod>
+     <loc>/OtherLocomotiveForces/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/ValuableValues/</loc>
+     <lastmod>2016-12-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
