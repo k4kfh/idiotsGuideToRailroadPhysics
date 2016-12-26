@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>The Basics - The Idiot's Guide to Railroad Physics</title>
+        <title>Finding Speed & Acceleration - The Idiot's Guide to Railroad Physics</title>
       
       
       
@@ -87,7 +87,7 @@
             
           </span>
         
-        The Basics
+        Finding Speed & Acceleration
       </div>
     </div>
     
@@ -152,36 +152,9 @@
           
             
   <li>
-    <a class="current" title="The Basics" href="./">
+    <a class="" title="The Basics" href="../TheBasics/">
       The Basics
     </a>
-    
-      
-        
-      
-      
-        <ul>
-          
-            <li class="anchor">
-              <a title="Introduction to the F7" href="#introduction-to-the-f7">
-                Introduction to the F7
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Drivetrain" href="#drivetrain">
-                Drivetrain
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Engine Controls/Indicators" href="#engine-controlsindicators">
-                Engine Controls/Indicators
-              </a>
-            </li>
-          
-        </ul>
-      
     
   </li>
 
@@ -206,9 +179,30 @@
           
             
   <li>
-    <a class="" title="Finding Speed & Acceleration" href="../FindingAcceleration/">
+    <a class="current" title="Finding Speed & Acceleration" href="./">
       Finding Speed & Acceleration
     </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Finding Net Force" href="#finding-net-force">
+                Finding Net Force
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Calculating Acceleration" href="#calculating-acceleration">
+                Calculating Acceleration
+              </a>
+            </li>
+          
+        </ul>
+      
     
   </li>
 
@@ -246,55 +240,71 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="parts-of-a-locomotive">Parts of a Locomotive<a class="headerlink" href="#parts-of-a-locomotive" title="Permanent link">#</a></h1>
-<h2 id="introduction-to-the-f7">Introduction to the F7<a class="headerlink" href="#introduction-to-the-f7" title="Permanent link">#</a></h2>
-<p>For the purposes of this guide, we will be working with an <a href="https://en.wikipedia.org/wiki/EMD_F7">F7-A,</a> a very popular locomotive built by <a href="https://en.wikipedia.org/wiki/Electro-Motive_Diesel">EMD</a> around 1950. There may be a few other locomotives used as examples, but the F7-A will be the primary focus.</p>
-<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/3/37/19680120_18_CB%26Q_Galesburg,_IL.jpg" /></p>
-<p><em>Above: EMD F7-A #165A and an F7-B lead a CB&amp;Q train through Galesburg</em></p>
-<p><strong>More information on the F7:</strong></p>
-<ul>
-<li><a href="../ValuableValues">This guide's "Valuable Values" page,</a> which includes many specifications for the locomotive</li>
-<li><a href="http://www.rr-fallenflags.org/manual/f7-om.pdf">The original EMD Operator's Manual</a></li>
-<li><a href="http://www.thedieselshop.us/Data%20EMD%20F7.HTML">The locomotive's data sheet</a> (courtesy of <a href="http://thedieselshop.us">thedieselshop.us</a>)</li>
-</ul>
-<h2 id="drivetrain">Drivetrain<a class="headerlink" href="#drivetrain" title="Permanent link">#</a></h2>
-<p>A diesel-electric locomotive is essentially an electric locomotive with a huge diesel generator on-board. The diesel engine, called the <strong>prime mover</strong>, turns a <strong>generator</strong> (or an <strong>alternator</strong>, in a newer AC locomotive), which creates electricity. This electricity is used to power the <strong>traction motors</strong>, which are mechanically connected to the wheels by way of a simple gear system.</p>
-<h3 id="key-parts">Key Parts:<a class="headerlink" href="#key-parts" title="Permanent link">#</a></h3>
+          <h1 id="calculating-acceleration-and-speed">Calculating Acceleration and Speed<a class="headerlink" href="#calculating-acceleration-and-speed" title="Permanent link">#</a></h1>
+<p>We know that <script type="math/tex">f=ma</script>, or <script type="math/tex">force = mass \times acceleration</script>, from Newton's Second Law. We want to find acceleration, which is the change in an object's speed over time. It's typically measured in meters per second per second, or meters/second<script type="math/tex">^2</script>. 1m/s<script type="math/tex">^2</script> means that the object is moving 1m/s faster every second.</p>
+<p>To find acceleration, we can flip <script type="math/tex">f=ma</script> around to get <script type="math/tex">a=\frac{f}{m}</script>, or <script type="math/tex">acceleration=\frac{force}{mass}</script>.</p>
+<p>It's important to note the units for this equation.</p>
 <ul>
 <li>
-<p><strong>Prime Mover</strong>: The diesel engine which powers the locomotive's generator or alternator.</p>
+<script type="math/tex">a</script> (acceleration) is measured in m/s<script type="math/tex">^2</script>.</li>
+<li>
+<script type="math/tex">m</script> (mass) is measured in kilograms, <em>not grams!</em></li>
+<li>
+<script type="math/tex">f</script> (force) is measured in Newtons.</li>
+</ul>
+<h2 id="finding-net-force">Finding Net Force<a class="headerlink" href="#finding-net-force" title="Permanent link">#</a></h2>
+<p>The force variable in <script type="math/tex">f=ma</script> is more properly called net force. The <strong>net force</strong> is the total force an object is experiencing. How do we find this? By adding up all the forces acting on the object.</p>
+<h3 id="example-1">Example #1<a class="headerlink" href="#example-1" title="Permanent link">#</a></h3>
+<p><img alt="" src="https://d2gne97vdumgn3.cloudfront.net/api/file/24624fQaRHmuMCrY267F" /></p>
+<p>We have the following forces acting on an object (note that the +/- signs are tied to the direction of the force):</p>
 <ul>
-<li>
-<p>The F7's prime mover is an <a href="https://en.wikipedia.org/wiki/EMD_567">EMD 16-567B</a>, a two-stroke V16 diesel.</p>
-</li>
-<li>
-<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Emd_567B.jpg" /> <em>By PanzerschreckLeopard - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=33245679</em></p>
-</li>
-<li><strong>Generator</strong>: Turned by the prime mover to  generate electricity on DC locomotives, such as the F7. Typically, these are 600V generators.</li>
-<li><strong>Alternator</strong>: Turned by the prime mover to generate electricity on AC locomotives, such as the newer <a href="https://en.wikipedia.org/wiki/GE_Evolution_Series#ES44AC">GE ES44AC</a></li>
-<li><strong>Traction Motors</strong>: Motors in the trucks which use electricity from the generator or alternator to rotate the wheels. In DC locomotives, these are typically 600V DC motors. Most newer locomotives, such as the newer <a href="https://en.wikipedia.org/wiki/GE_Evolution_Series#ES44AC">GE ES44AC</a> use AC traction motors due to their greater efficiency.</li>
+<li>+100 Newtons "driving force." This is similar to our locomotive's tractive effort.</li>
+<li>-20 Newtons "air resistance." We haven't discussed this yet, but we'll include it just for example's sake.</li>
+<li>-50 Newtons friction, similar to the rolling resistance of the train.</li>
 </ul>
-</li>
-</ul>
-<p><img alt="" src="http://www.progressiverailroading.com/railproducts/graphics/TMAC-EMD-RBLT12.jpg" /></p>
-<p><em>Above: A typical traction motor removed from its truck</em></p>
-<hr />
-<p>These are the key parts of the powertrain in a typical diesel-electric locomotive. We will cover braking later on, as brake equipment gets very complex. Now let's move on to the controls.</p>
-<hr />
-<h2 id="engine-controlsindicators">Engine Controls/Indicators<a class="headerlink" href="#engine-controlsindicators" title="Permanent link">#</a></h2>
-<ul>
-<li>
-<p><strong>Throttle</strong>: This is different from the throttle in an automobile in that it only has 9 positions, counting 0 (idle). These positions are referred to as IDLE, and RUN1 through RUN8, with RUN8 being the maximum power output the locomotive is capable of.</p>
-</li>
-<li>
-<p><strong>Ammeter/Load Indicator</strong>: This is a gauge that measures the electrical current (in amps) being used by the traction motors of the locomotive. It is used by the engineer as a rough estimate of the load on the locomotive. A photo of the ammeter in an F7 can be found in <a href="http://www.rr-fallenflags.org/manual/f7-om.pdf">the operator's manual.</a></p>
-</li>
-<li>
-<p><strong>Speedometer</strong>: The look of a locomotive speedometer can vary widely depending on its age, but they all perform the same function. The F7 has a <a href="http://s3.amazonaws.com/rrpa_photos/58869/IMG_1012e.jpg">Barco Speed Recorder,</a> while newer locomotives may be equipped with <a href="https://www.wabtec.com/uploads/styles/medium/public/BSC-LEDSpeedIndicator.jpg?itok=rXDknTQz">a digital speedometer like this one.</a></p>
-</li>
-</ul>
-<hr />
-<p>That's all for this chapter. Move on to "Horsepower and Tractive Effort" for a start into the physics behind the powertrain!</p>
+<p>We add all these forces up <em>with their signs</em> like so:</p>
+<p>
+<script type="math/tex">100 + (-20) + (-50) = 30</script>
+</p>
+<p>So the net force acting on this object is 30 Newtons.</p>
+<h2 id="calculating-acceleration">Calculating Acceleration<a class="headerlink" href="#calculating-acceleration" title="Permanent link">#</a></h2>
+<p>Once we have the net force, all we need is the mass, and we can calculate acceleration. Let's keep using the example above, and say that the cube's mass is 5kg.</p>
+<p>
+<script type="math/tex">a=\frac{f}{m}</script>
+</p>
+<p>
+<script type="math/tex">a=\frac{30}{5}</script>
+</p>
+<p>
+<script type="math/tex">a=6m/s^2</script>
+</p>
+<p>So with a net force of 30 Newtons, our cube will accelerate at 6m/s<script type="math/tex">^2</script>. So the cube's actual speed varies with time, shown in the table below (starting from 0m/s):</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Speed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 seconds</td>
+<td>0 m/s</td>
+</tr>
+<tr>
+<td>1 second</td>
+<td>6 m/s</td>
+</tr>
+<tr>
+<td>2 seconds</td>
+<td>12 m/s</td>
+</tr>
+<tr>
+<td>3 seconds</td>
+<td>18 m/s</td>
+</tr>
+</tbody>
+</table>
           <aside class="copyright" role="note">
             
             Documentation built with
@@ -311,7 +321,7 @@
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href=".." title="Introduction">
+        <a href="../OtherLocomotiveForces/" title="Other Locomotive Forces">
           <span class="direction">
             Previous
           </span>
@@ -321,7 +331,7 @@
             </div>
             <div class="stretch">
               <div class="title">
-                Introduction
+                Other Locomotive Forces
               </div>
             </div>
           </div>
@@ -330,14 +340,14 @@
     </div>
     <div class="next">
       
-        <a href="../HorsepowerAndTractiveEffort/" title="Horsepower and Tractive Effort">
+        <a href="../ValuableValues/" title="Valuable Values">
           <span class="direction">
             Next
           </span>
           <div class="page">
             <div class="stretch">
               <div class="title">
-                Horsepower and Tractive Effort
+                Valuable Values
               </div>
             </div>
             <div class="button button-next" role="button" aria-label="Next">
