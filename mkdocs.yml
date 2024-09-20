@@ -1,6 +1,7 @@
 site_name: The Idiot's Guide to Railroad Physics
 theme: 'material'
-pages:
+
+nav:
 - Introduction: index.md
 - The Basics: TheBasics.md
 - Horsepower and Tractive Effort: HorsepowerAndTractiveEffort.md
@@ -9,7 +10,7 @@ pages:
 
 # Extensions
 markdown_extensions:
-  - codehilite(css_class=code)
+  - codehilite
   - admonition
   - mdx_math
   - toc:

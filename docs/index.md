@@ -6,9 +6,9 @@ This guide was originally conceived by [@k4kfh](http://github.com/k4kfh). Howeve
 	- [His Ultimate DCC Throttle project](https://www.youtube.com/watch?v=51V1FEoJhTA)
 	- The many hours he's spent kindly teaching me via email
 - **Mr. Al Krug**
-	- His excellent paper, ["Freight Train Air Brakes of North America"](http://alkrugsite.evilgeniustech.com/rrfacts/brakes.htm)
-		- *Note: Mr. Krug's site has gone offline since I initially found it. However, since it was so useful, I preserved [a copy of it here,](http://alkrugsite.evilgeniustech.com) courtesy of the Internet Archive. All of the links originally leading to ``alkrug.vcn.com`` have been edited to link to my copy. All credit still goes to Al Krug.*
-	- [His library of useful facts, charts, and locomotive specifications](http://alkrugsite.evilgeniustech.com/rrfacts/rrfacts.htm)
+	- His excellent paper, ["Freight Train Air Brakes of North America"](https://alkrugarchive.github.io/rrfacts/brakes.htm)
+		- *Note: Mr. Krug's site has gone offline since I initially found it. However, since it was so useful, I preserved [a copy of it here,](https://alkrugarchive.github.io) courtesy of the Internet Archive. All of the links originally leading to ``alkrug.vcn.com`` have been edited to link to my copy. All credit still goes to Al Krug.*
+	- [His library of useful facts, charts, and locomotive specifications](https://alkrugarchive.github.io/rrfacts/rrfacts.htm)
 	- His generous email help
 
 ---

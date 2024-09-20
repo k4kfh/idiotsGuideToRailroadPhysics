@@ -10,7 +10,7 @@ For the purposes of this guide, we will be working with an [F7-A,](https://en.wi
 
 **More information on the F7:**
 
-- [This guide's "Valuable Values" page,](/ValuableValues) which includes many specifications for the locomotive
+- [This guide's "Valuable Values" page,](ValuableValues.md) which includes many specifications for the locomotive
 - [The original EMD Operator's Manual](http://www.rr-fallenflags.org/manual/f7-om.pdf)
 - [The locomotive's data sheet](http://www.thedieselshop.us/Data%20EMD%20F7.HTML) (courtesy of [thedieselshop.us](http://thedieselshop.us))
 

@@ -1,261 +1,505 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
-<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
-<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
-<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+
+<!doctype html>
+<html lang="en" class="no-js">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../TheBasics/">
+      
+      
+        <link rel="next" href="../OtherLocomotiveForces/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
+    
     
       
         <title>Horsepower and Tractive Effort - The Idiot's Guide to Railroad Physics</title>
       
-      
-      
-      
-    
-    <meta property="og:url" content="None">
-    <meta property="og:title" content="The Idiot's Guide to Railroad Physics">
-    <meta property="og:image" content="None/../">
-    <meta name="apple-mobile-web-app-title" content="The Idiot's Guide to Railroad Physics">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
     
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
-    <style>
-      @font-face {
-      	font-family: 'Icon';
-      	src: url('../assets/fonts/icon.eot?52m981');
-      	src: url('../assets/fonts/icon.eot?#iefix52m981')
-               format('embedded-opentype'),
-      		   url('../assets/fonts/icon.woff?52m981')
-               format('woff'),
-      		   url('../assets/fonts/icon.ttf?52m981')
-               format('truetype'),
-      		   url('../assets/fonts/icon.svg?52m981#icon')
-               format('svg');
-      	font-weight: normal;
-      	font-style: normal;
-      }
-    </style>
-    <link rel="stylesheet" href="../assets/stylesheets/application-a422ff04cc.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
+      
+      
+
+
     
     
       
-      
-      
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
-      <style>
-        body, input {
-          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        }
-        pre, code {
-          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
-        }
-      </style>
     
     
-    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
     
   </head>
   
   
+    <body dir="ltr">
   
-  <body class=" ">
     
-    <div class="backdrop">
-      <div class="backdrop-paper"></div>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction-to-simulation-physics" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
-    <input class="toggle" type="checkbox" id="toggle-drawer">
-    <input class="toggle" type="checkbox" id="toggle-search">
-    <label class="toggle-button overlay" for="toggle-drawer"></label>
-    <header class="header">
-      <nav aria-label="Header">
-  <div class="bar default">
-    <div class="button button-menu" role="button" aria-label="Menu">
-      <label class="toggle-button icon icon-menu" for="toggle-drawer">
-        <span></span>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="The Idiot&#39;s Guide to Railroad Physics" class="md-header__button md-logo" aria-label="The Idiot's Guide to Railroad Physics" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Idiot's Guide to Railroad Physics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Horsepower and Tractive Effort
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
-    </div>
-    <div class="stretch">
-      <div class="title">
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
         
-          <span class="path">
-            
-          </span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        Horsepower and Tractive Effort
-      </div>
-    </div>
-    
-    
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
       
-      <div class="button button-github" role="button" aria-label="GitHub">
-        <a href="https://github.com/k4kfh" title="@k4kfh on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
       </div>
-    
-    <div class="button button-search" role="button" aria-label="Search">
-      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
     </div>
   </div>
-  <div class="bar search">
-    <div class="button button-close" role="button" aria-label="Close">
-      <label class="toggle-button icon icon-back" for="toggle-search"></label>
-    </div>
-    <div class="stretch">
-      <div class="field">
-        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
-      </div>
-    </div>
-    <div class="button button-reset" role="button" aria-label="Search">
-      <button class="toggle-button icon icon-close" id="reset-search"></button>
-    </div>
-  </div>
-</nav>
-    </header>
-    <main class="main">
-      
-      <div class="drawer">
-        <nav aria-label="Navigation">
+</div>
+    
+    
+  </nav>
   
-  <a href="/" class="project">
-    <div class="banner">
+</header>
+    
+    <div class="md-container" data-md-component="container">
       
-      <div class="name">
-        <strong>
-          The Idiot's Guide to Railroad Physics
-          <span class="version">
-            
-          </span>
-        </strong>
+      
         
-      </div>
-    </div>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="The Idiot&#39;s Guide to Railroad Physics" class="md-nav__button md-logo" aria-label="The Idiot's Guide to Railroad Physics" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    The Idiot's Guide to Railroad Physics
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TheBasics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Horsepower and Tractive Effort
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Horsepower and Tractive Effort
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-simulation-physics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Simulation Physics
+    </span>
   </a>
-  <div class="scrollable">
-    <div class="wrapper">
+  
+</li>
       
-      <div class="toc">
-        <ul>
-          
-            
-  <li>
-    <a class="" title="Introduction" href="..">
-      Introduction
-    </a>
-    
-  </li>
-
-          
-            
-  <li>
-    <a class="" title="The Basics" href="../TheBasics/">
-      The Basics
-    </a>
-    
-  </li>
-
-          
-            
-  <li>
-    <a class="current" title="Horsepower and Tractive Effort" href="./">
-      Horsepower and Tractive Effort
-    </a>
-    
+        <li class="md-nav__item">
+  <a href="#horsepower" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horsepower
+    </span>
+  </a>
+  
+</li>
       
+        <li class="md-nav__item">
+  <a href="#what-is-tractive-effort" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Tractive Effort?
+    </span>
+  </a>
+  
+</li>
       
-        <ul>
-          
-            <li class="anchor">
-              <a title="Introduction to Simulation Physics" href="#introduction-to-simulation-physics">
-                Introduction to Simulation Physics
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Horsepower" href="#horsepower">
-                Horsepower
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="What is Tractive Effort?" href="#what-is-tractive-effort">
-                What is Tractive Effort?
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Tractive Effort Estimation Formula" href="#tractive-effort-estimation-formula">
-                Tractive Effort Estimation Formula
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Examples" href="#examples">
-                Examples
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="F7 Tractive Effort Table" href="#f7-tractive-effort-table">
-                F7 Tractive Effort Table
-              </a>
-            </li>
-          
-        </ul>
-      
-    
-  </li>
-
-          
-            
-  <li>
-    <a class="" title="Other Locomotive Forces" href="../OtherLocomotiveForces/">
-      Other Locomotive Forces
-    </a>
-    
-  </li>
-
-          
-            
-  <li>
-    <a class="" title="Valuable Values" href="../ValuableValues/">
-      Valuable Values
-    </a>
-    
-  </li>
-
-          
-        </ul>
+        <li class="md-nav__item">
+  <a href="#tractive-effort-estimation-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tractive Effort Estimation Formula
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tractive Effort Estimation Formula">
+      <ul class="md-nav__list">
         
-          <hr>
-          <span class="section">The author</span>
-          <ul>
+          <li class="md-nav__item">
+  <a href="#how-do-i-use-this-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do I use this formula?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f7-tractive-effort-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      F7 Tractive Effort Table
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OtherLocomotiveForces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Other Locomotive Forces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ValuableValues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Valuable Values
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
             
             
               
-              <li>
-                <a href="https://github.com/k4kfh" target="_blank" title="@k4kfh on GitHub">
-                  @k4kfh on GitHub
-                </a>
-              </li>
-            
-          </ul>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-simulation-physics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Simulation Physics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#horsepower" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horsepower
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-tractive-effort" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Tractive Effort?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tractive-effort-estimation-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tractive Effort Estimation Formula
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tractive Effort Estimation Formula">
+      <ul class="md-nav__list">
         
-      </div>
-    </div>
-  </div>
+          <li class="md-nav__item">
+  <a href="#how-do-i-use-this-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do I use this formula?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f7-tractive-effort-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      F7 Tractive Effort Table
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
-      </div>
-      <article class="article">
-        <div class="wrapper">
+                  </div>
+                </div>
+              </div>
+            
           
-            <h1>Horsepower and Tractive Effort</h1>
           
-          <h2 id="introduction-to-simulation-physics">Introduction to Simulation Physics<a class="headerlink" href="#introduction-to-simulation-physics" title="Permanent link">#</a></h2>
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Horsepower and Tractive Effort</h1>
+
+<h2 id="introduction-to-simulation-physics">Introduction to Simulation Physics<a class="headerlink" href="#introduction-to-simulation-physics" title="Permanent link">#</a></h2>
 <p>The backbone of train simulation physics is the simple equation, <em>F=MA</em> (<em>Force = Mass x Acceleration</em>). Acceleration is a measure of how quickly you are gaining or losing speed. <a href="http://www.physicsclassroom.com/class/1DKin/Lesson-1/Acceleration">Read more on accceleration here.</a></p>
 <p>We want to find the acceleration of the train, and we can use algebra to rearrange <em>F=MA</em>, making it <em>Acceleration = Force/Mass</em>. So to find the acceleration (and thus the speed) we need to know the force acting on the train and  the mass of the train. The mass is easy to find. The force...not so much.</p>
 <div class="admonition tip">
@@ -266,12 +510,12 @@
 <p><em>Horsepower is an interesting concept. We know that the F7-A has a 1500HP motor, but what can we do with that number?</em></p>
 <p>One <strong>Horsepower</strong> is equal to 550 foot-pounds per second. This means that one horsepower could lift 550 pounds by 1 foot in 1 second. This can also be represented as approximately 745.7 watts.</p>
 <p><strong>Important Concept:</strong> On a diesel locomotive, you are not always outputting the maximum horsepower. It is roughly proportional to throttle position, so we can estimate the output horsepower like this:</p>
-<pre class="code"><code>Output Horsepower = (Throttle Position/8) * Maximum</code></pre>
-
+<div class="codehilite"><pre><span></span><code>Output Horsepower = (Throttle Position/8) * Maximum
+</code></pre></div>
 
 <p>So for an F7 with the throttle in RUN1, the math would look like this:</p>
-<pre class="code"><code>187.5 HP = (1/8) * 1500HP</code></pre>
-
+<div class="codehilite"><pre><span></span><code><span class="mf">187.5</span><span class="w"> </span><span class="n">HP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mf">1</span><span class="o">/</span><span class="mf">8</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1500</span><span class="n">HP</span>
+</code></pre></div>
 
 <p>And it looks like, from this, we could convert horsepower to foot-lbs and be all done, right? <code>187.5 * 550 = 10,3125 foot-pounds per second</code>, right?</p>
 <p>No, not exactly.</p>
@@ -390,81 +634,59 @@ Convert 191221.9631 Newtons to pounds and we are left with about 42,988lbs. This
 </table>
 <hr />
 <p>That's all for this chapter. In the next chapter, we'll discuss a few quirks to the tractive effort formula, and some other forces that act on a train.</p>
-          <aside class="copyright" role="note">
-            
-            Documentation built with
-            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
-            using the
-            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
-              Material
-            </a>
-            theme.
-          </aside>
-          
-            <footer class="footer">
-              
-  <nav class="pagination" aria-label="Footer">
-    <div class="previous">
-      
-        <a href="../TheBasics/" title="The Basics">
-          <span class="direction">
-            Previous
-          </span>
-          <div class="page">
-            <div class="button button-previous" role="button" aria-label="Previous">
-              <i class="icon icon-back"></i>
-            </div>
-            <div class="stretch">
-              <div class="title">
-                The Basics
-              </div>
-            </div>
-          </div>
-        </a>
-      
-    </div>
-    <div class="next">
-      
-        <a href="../OtherLocomotiveForces/" title="Other Locomotive Forces">
-          <span class="direction">
-            Next
-          </span>
-          <div class="page">
-            <div class="stretch">
-              <div class="title">
-                Other Locomotive Forces
-              </div>
-            </div>
-            <div class="button button-next" role="button" aria-label="Next">
-              <i class="icon icon-forward"></i>
-            </div>
-          </div>
-        </a>
-      
-    </div>
-  </nav>
 
-            </footer>
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
           
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-      </article>
-      <div class="results" role="status" aria-live="polite">
-        <div class="scrollable">
-          <div class="wrapper">
-            <div class="meta"></div>
-            <div class="list"></div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <script>
-      var base_url = '..';
-      var repo_id  = '';
-    </script>
-    <script src="../assets/javascripts/application-997097ee0c.js"></script>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
     
-      <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
     
   </body>
 </html>
